@@ -1,2 +1,6 @@
 com/fju/Tester.java
  com.fju.Tester
+com/fju/Product.java
+ com.fju.Product
+com/fju/Money.java
+ com.fju.Money

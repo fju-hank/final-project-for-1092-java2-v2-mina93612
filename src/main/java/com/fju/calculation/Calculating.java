@@ -63,17 +63,7 @@ public abstract class Calculating extends JPanel implements MouseListener {
         frame.add(pn2);
         frame.setVisible(true);
     }
-    public  Calculating(){
-        this.addMouseListener(this);
-    }
-    @Override
-    public void mousePressed(MouseEvent e) {
-        int x = e.getX();
-        int y = e.getY();
-        Graphics g = this.getGraphics();
-        g.setColor(new Color((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255)));
-        g.drawOval(x-25,y-25,50,50);
-    }
+
 
 
     public static class ActLis implements ActionListener {

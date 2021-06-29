@@ -17,26 +17,13 @@ public class Money {
     }
 
     public void getMoney() {//印出硬幣數量
-        System.out.println("╔════════════════════════════╗");
-        System.out.println("\t"+"退" + ten + "個10元硬幣");
-        System.out.println("\t"+"退" + five + "個5元硬幣");
-        System.out.println("\t"+"退" + one + "個1元硬幣");
-        System.out.println("\t"+"共退" + money + "元");
-        System.out.println("╚════════════════════════════╝");
+        System.out.println("退" + ten + "個10元硬幣");
+        System.out.println("退" + five + "個5元硬幣");
+        System.out.println("退" + one + "個1元硬幣");
+        System.out.println("共退" + money + "元");
     }
 
-    class Receive{
-        private int money;
-        private int[] moneyObj;
-        public void inPutMoney(int n){//投幣
-            money = n;
-        }
-        public void outPutMoney(){//找零
-            Money m = new Money();
-            m.setMoney(this.money);
-            m.getMoney();
-        }
-    }
+
 }
 
 

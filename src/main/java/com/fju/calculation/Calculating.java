@@ -8,9 +8,9 @@ public abstract class Calculating extends JPanel implements MouseListener {
     public static Panel pn1=new Panel(new GridLayout(4,3));
     public static Panel pn2=new Panel(new GridLayout(4,1));
     public static Label lab=new Label("0",Label.RIGHT);
-    //依序為清除、加、減、乘、除、等於
+    //按鈕清除、加、減、乘、除、等於
     public static Button clean,plus,cut,mul,div,amo;
-    //0~9的數字
+    //按鈕0~9
     public static Button digits[]=new Button[10];
     public static long num;//存放結果
     public static byte op;//代表運算子

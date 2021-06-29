@@ -11,6 +11,7 @@ public class Tester {
 
     public static void main(String[] args) {
         int buy;
+        String keep ="F";
         Product[] products = {new Product1(), new Product2(), new Product3(), new Product4(), new Product5()};
         Money money = new  Money();
         Scanner scanner = new Scanner(System.in);
@@ -24,17 +25,19 @@ public class Tester {
         System.out.println("請投入硬幣：");
         int inputMoney =Integer.parseInt(scanner.next());
         System.out.println("請選擇商品代碼：");
-         int chooseId = Integer.parseInt(scanner.next());
-         for (Product product : products) {
-
+        int chooseId = Integer.parseInt(scanner.next());
+             for (Product product : products) {
                  if (chooseId == product.getId()){
                      int price = product.getPrice();
-                     if (inputMoney  > price){
-                         System.out.println("成功購買"+"["+product.getName()+"]");
+                     if (inputMoney  >= price ){
+                         System.out.println( "成功購買" +"["+ product.getName() +"]");
                          inputMoney -= price;
-                     }else System.out.println("!!!餘額不足!!!");
+                     }else {
+                         System.out.println("!金額不足!");
+                     }
                  }
-         }
+             }
+
         money.setMoney(inputMoney);
         money.getMoney();
         //判斷是否找零|餘額不足|繼續購買

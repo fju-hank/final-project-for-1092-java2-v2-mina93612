@@ -1,4 +1,4 @@
-package com.fju.calculation;
+package com.fju;
 
 import javax.swing.*;
 import java.awt.*;
